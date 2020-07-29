@@ -1,0 +1,34 @@
+<div class="container landing">
+    <h2 class="title">Guitar Randomizer</h2>
+
+    <div class="form-group sounds">
+        <label class="col-3 soundLabel" for="exampleFormControlSelect1">Guitar Type</label>
+        <select class=" col-5 form-control" [(ngModel)]="guitarType" id="exampleFormControlSelect1">
+          <option *ngFor="let opt of guitarTypes">{{opt}}</option>
+        </select>
+    </div>
+    <div class="form-group sounds">
+        <label class="col-3 soundLabel" for="exampleFormControlSelect1">Sound Type</label>
+        <select class=" col-5 form-control" [(ngModel)]="soundType" id="exampleFormControlSelect1">
+          <option *ngFor="let opt of soundOptions">{{opt}}</option>
+        </select>
+    </div>
+    <div class="form-group sounds">
+        <label class="col-3 soundLabel" for="exampleFormControlSelect1">Repititions</label>
+        <input type="number" class="col-5 form-control" [(ngModel)]="repititions" id="exampleFormControlSelect1"/>
+    </div>
+    <div class="form-group sounds">
+        <label class="col-3 soundLabel" for="exampleFormControlSelect1">Interval (Secs)</label>
+        <input type="number" class=" col-5 form-control" [(ngModel)]="interval" id="exampleFormControlSelect1"/>
+    </div>
+
+    <div class="actionButtons">
+        <button (click)="pauseAudio()" class="btn btn-secondary" type="button">Pause</button>
+        <button (click)="playAudio()" class="ml-3 btn btn-primary" type="button">Play</button>
+    </div>
+
+    <div class="answer">
+        <h1>{{answer}}</h1>
+    </div>
+    
+</div>

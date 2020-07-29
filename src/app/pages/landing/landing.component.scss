@@ -1,0 +1,30 @@
+.landing {
+    margin-top: 100px;
+    font-family: Montserrat;
+    text-align: center;
+}
+
+.title {
+    color: #477E57;
+}
+
+.soundLabel {
+    font-size: 30px;
+}
+
+.sounds {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+.actionButtons {
+    
+}
+
+.answer {
+    margin-top: 50px;
+    border: solid 1px black;
+    height: 30vh;
+    width: 20vw;
+    display: inline-block;
+}
