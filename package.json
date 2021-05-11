@@ -59,7 +59,7 @@
     "@angular/upgrade": "~7.0",
     "core-js": "~2.5",
     "eslint": "^5.16.0",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "rxjs": "~6.3",
     "ts-loader": "^5.4.5",
     "zone.js": "~0.8"
